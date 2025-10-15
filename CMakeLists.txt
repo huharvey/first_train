@@ -24,10 +24,13 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build)
 
 # ########################## USER CONFIG SECTION ##############################
 # Set the project name and the languages used
-project(project C CXX ASM) # TODO: change project name here
+project(first_train C CXX ASM) # TODO: change project name here
+
+set(CMAKE_C_FLAGS_DEBUG "-g3 -Og -Wall")
+set(CMAKE_CXX_FLAGS_DEBUG "-g3 -Og -Wall")
 
 # Specify user folders
-set(user_folders "Tasks") # TODO Add your own user folders here
+set(user_folders "first_train") # TODO Add your own user folders here
 
 # Specify the path to the HW-Components directory
 # set(HWC_DIR "HW-Components") # TODO: Set your own HW-Components path here
